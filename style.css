@@ -4,6 +4,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  background-color: #121212;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -23,32 +27,33 @@ footer {
   }
 
   .left-side{
-    padding: 10px;
-    border: 1px solid red;
-    width: 70vw;
+    width: 80vw;
     border-radius: 6px;
+    overflow-y: scroll;
   }
 
   .greenleftbox{
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(33,101,76,1) 0%, rgba(26,71,40,1) 100%);
+    background: rgb(29,72,53);
+    background: linear-gradient(180deg, rgba(29,72,53,1) 0%, rgba(21,52,39,1) 100%);
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   .right-side{
     border: 1px solid red;
-    width: 40vw;
+    width: 25vw;
     border-radius: 6px;
     padding: 10px;
+    overflow-y: scroll;
   }
 
   .upperleftbuttons{
     border: 0px solid;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #242423;
   }
 
@@ -88,6 +93,7 @@ footer {
 
   .leftimage:hover{
     transform: scale(1.1);
+    cursor: pointer;
   }
 
   .left-box-2{
@@ -97,9 +103,17 @@ footer {
     gap: 25px;
   }
 
+  .left-box-3{
+    background: rgb(15,34,26);
+    background: linear-gradient(180deg, rgba(15,34,26,1) 0%, rgba(18,18,18,1) 54%);
+    border-top: 0.05px solid #153427;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
   .songname{
     font-weight: 900;
-    font-size: 65px;
+    font-size: 75px;
     word-spacing: 0px;
   }
 
@@ -113,4 +127,221 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     color: white;
+  }
+  
+  .lb-group1{
+    display: flex;
+    direction: row;
+    gap: 30px;
+    margin-left: 25px;
+    align-items: center;
+  }
+
+  .fa-circle-pause{
+    color: #1DB954;
+  }
+
+  .fa-shuffle{
+    color: #b3b3b3;
+  }
+
+  .fa-circle-check{
+    color: #1DB954;
+  }
+
+  .fa-circle-arrow-down{
+    color: #b3b3b3;
+  }
+
+  .fa-ellipsis{
+    color: #b3b3b3;
+  }
+
+  .morebuttonsleft{
+    display: flex;
+    direction: row;
+    gap: 25px;
+  }
+
+  .listname{
+    color: #b3b3b3;
+    transition: all;
+  }
+
+  .listname:hover{
+    color: white;
+    cursor:pointer;
+  }
+
+  .fa-list{
+    margin-right: 20px;
+  }
+
+  .list{
+    display:flex;
+    direction: row;
+    gap: 10px;
+    align-items: baseline;
+    margin-right: 5px;
+  }
+
+  
+  
+  .left-buttons-playtolist{
+    margin-top: 25px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btnheight{
+    transition: all .1s ease-in-out;;
+  }
+
+  .btnheight:hover{
+    color: #1ff50c;
+    cursor: pointer;
+  }
+
+  .morebtnleft{
+    font-size: 35px;
+  }
+
+  .btnwhite:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .fa-circle-pause{
+    font-size: 60px;
+  }
+
+  .fa-shuffle{
+    font-size: 40px;
+  }
+
+  #songtable{
+    width: 95%;
+    border-collapse: collapse;
+    color: #b3b3b3;
+    margin-left: 18px;
+  }
+
+  .infosong{
+    border: none;
+  }
+
+  .infosong:hover{
+    background-color: #7d7d7d;
+    cursor: default;
+  }
+
+  th{
+    height: 25px;
+  }
+
+  td{
+    height: 55px;
+  }
+
+  .table{
+    margin-top: 35px;
+    margin-left: 33px;
+  }
+
+  .titlesong{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .numberofplays{
+    width: 30%;
+    text-align: justify;
+  }
+
+  .songduration{
+    text-align: center;
+  }
+
+  .table-words{
+    margin: 0;
+    color: white;
+  }
+  
+  .smallname{
+    font-size: 14px;
+    color: #7d7d7d;
+  }
+
+  .numbersong{
+    padding-left: 15px;
+  }
+
+  .copyrights{
+    color: #7d7d7d;
+    margin: 0;
+    padding: 0;
+  }
+
+  .supersmallname{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .left-box-4{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .btn-options{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .seemore{
+    font-size: 15px;
+    color: #7d7d7d;
+  }
+
+  .optionswhite{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .bls:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .card{
+    background-color: #181818;
+    padding: 15px;
+    padding-bottom: 1px;
+    border-radius: 8px;
+  }
+  
+  .card:hover{
+    background-color: #282828;
+    cursor: pointer;
+  }
+
+  h5{
+    color: white;
+  }
+
+  .cards{
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  #sts{
+    font-size: 17px;
   }
